@@ -1,0 +1,45 @@
+<svg width="680" height="380" viewBox="0 0 680 380" role="img" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+<title>RAP attestation lifecycle</title>
+<desc>An attestation document travels from the Cloud Agent across the trust boundary to the Private Custodian and returns corrected with an approved projection.</desc>
+<style>
+  .ink { fill: #1a1a1a; }
+  .ink-stroke { stroke: #1a1a1a; }
+  @media (prefers-color-scheme: dark) {
+    .ink { fill: #e6e6e6; }
+    .ink-stroke { stroke: #e6e6e6; }
+  }
+</style>
+
+<rect x="44" y="128" width="188" height="84" rx="18" class="ink" opacity="0.04"/>
+<rect x="44" y="128" width="188" height="84" rx="18" fill="none" class="ink-stroke" stroke-width="1.25" opacity="0.4"/>
+<text x="138" y="158" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" letter-spacing="0.2" class="ink">Cloud Agent</text>
+<text x="138" y="182" text-anchor="middle" dominant-baseline="central" font-size="12.5" letter-spacing="0.3" class="ink" opacity="0.55">untrusted · capable</text>
+
+<rect x="448" y="128" width="188" height="84" rx="18" fill="#2f6fed"/>
+<text x="542" y="158" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" letter-spacing="0.2" fill="#ffffff">Private Custodian</text>
+<text x="542" y="182" text-anchor="middle" dominant-baseline="central" font-size="12.5" letter-spacing="0.3" fill="#ffffff" opacity="0.8">trusted · owns the data</text>
+
+<line x1="340" y1="64" x2="340" y2="338" class="ink-stroke" stroke-width="1" stroke-dasharray="2 6" stroke-linecap="round" opacity="0.3"/>
+<text x="340" y="52" text-anchor="middle" font-size="12.5" letter-spacing="0.4" class="ink" opacity="0.5">trust boundary</text>
+
+<text x="244" y="120" text-anchor="start" font-size="12.5" letter-spacing="0.3" class="ink" opacity="0.5">draft</text>
+<text x="436" y="230" text-anchor="end" font-size="12.5" letter-spacing="0.3" fill="#2f6fed" opacity="0.85">corrected + projection</text>
+
+<g>
+<rect x="124" y="156" width="24" height="30" rx="5" class="ink" opacity="0.18"/>
+<rect x="124" y="156" width="24" height="30" rx="5" fill="none" class="ink-stroke" stroke-width="1.5" opacity="0.55"/>
+<animate attributeName="opacity" values="0;1;1;0" dur="6.5s" repeatCount="indefinite" keyTimes="0;0.06;0.28;0.33"/>
+<animateTransform attributeName="transform" type="translate" values="0 0; 392 0; 392 0" dur="6.5s" repeatCount="indefinite" keyTimes="0;0.3;1" calcMode="spline" keySplines="0.45 0 0.15 1;0 0 1 1"/>
+</g>
+
+<g>
+<rect x="516" y="156" width="24" height="30" rx="5" fill="#2f6fed" opacity="0"/>
+<animate attributeName="opacity" values="0;0;1;1;0" dur="6.5s" repeatCount="indefinite" keyTimes="0;0.46;0.51;0.73;0.78"/>
+<animateTransform attributeName="transform" type="translate" values="0 0; 0 0; -392 0; -392 0" dur="6.5s" repeatCount="indefinite" keyTimes="0;0.51;0.78;1" calcMode="spline" keySplines="0 0 1 1;0.45 0 0.15 1;0 0 1 1"/>
+</g>
+
+<rect x="250" y="266" width="180" height="62" rx="16" fill="#2f6fed" opacity="0.06"/>
+<rect x="250" y="266" width="180" height="62" rx="16" fill="none" stroke="#2f6fed" stroke-width="1" opacity="0.45"/>
+<text x="340" y="290" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" letter-spacing="0.2" fill="#2f6fed">risk attestation</text>
+<text x="340" y="310" text-anchor="middle" dominant-baseline="central" font-size="12.5" letter-spacing="0.3" class="ink" opacity="0.55">the only thing that crosses</text>
+</svg>
